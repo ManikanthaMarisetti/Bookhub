@@ -73,7 +73,7 @@ class App extends Component {
           <ProtectedRoute exact path="/shelf" component={BookShelves} />
           <ProtectedRoute exact path="/favorites" component={MyFavorites} />
           <ProtectedRoute exact path="/books/:id" component={BookItemDetails} />
-          <ProtectedRoute exact path="/not-found" component={NotFound} />
+          <Route exact path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
       </FavoriteContext.Provider>
